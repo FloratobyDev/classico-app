@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    /* user-select: none; */
+}
+
+.grid-auto-fit{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(14rem, 1fr));
+    /* width: 40%; */
+    margin:auto;
+    gap: 1rem;
+}
+
+@media (max-width: 540px) {
+   .grid-auto-fit{
+       width: 100%;
+   }
+}
+
+
+
+
